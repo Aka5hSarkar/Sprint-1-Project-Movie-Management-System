@@ -24,7 +24,7 @@ public class MovieController {
 	public Movie addMovie(@RequestBody Movie movie) {
 		return movieservice.saveMovie(movie);
 	}
-	@GetMapping("/movies")
+	@GetMapping("/movie")
 	public List<Movie> getMovies(){
 		return movieservice.getMovies();
 	}
