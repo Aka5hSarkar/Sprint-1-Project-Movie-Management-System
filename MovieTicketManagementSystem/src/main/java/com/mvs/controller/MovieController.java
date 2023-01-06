@@ -33,7 +33,7 @@ public class MovieController {
 		return movieservice.getMovieByName(movieName);
 	}
 	@PutMapping("/movie")
-	public Movie updateMovie(Movie movie) {
+	public Movie updateMovie(@RequestBody Movie movie) {
 		return movieservice.updateMovie(movie);
 	}
 	@DeleteMapping("/movie/{movieName}")
