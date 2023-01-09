@@ -7,9 +7,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
-@ComponentScan({"com.mvs.*"})
-@EnableJpaRepositories({"com.mvs.repository.*"})
+@SpringBootApplication
 public class MovieManagementSystemApplication {
 
 	public static void main(String[] args) {
